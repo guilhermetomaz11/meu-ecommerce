@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Império dos Pneus - Loja Oficial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Identidade Visual no Cabeçalho -->
+    <header>
+        <div class="logo">
+            <h1>Império dos Pneus</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="produto.html">Pneus</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <a href="carrinho.html" class="cart">🛒 Carrinho (2)</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Carrossel CSS -->
+        <section class="hero">
+            <div class="carousel">
+                <div class="carousel-slide slide-1">
+                    <div class="slide-content">
+                        <h2>SEMANA DO PNEU</h2>
+                        <p>Os melhores pneus com até 30% de desconto. Aproveite enquanto durar o stock!</p>
+                    </div>
+                </div>
+                <div class="carousel-slide slide-2">
+                    <div class="slide-content">
+                        <h2>RODAS PREMIUM</h2>
+                        <p>Estilo e agressividade para o seu carro. Confira a nova coleção.</p>
+                    </div>
+                </div>
+                <div class="carousel-slide slide-3">
+                    <div class="slide-content">
+                        <h2>PERFORMANCE TOTAL</h2>
+                        <p>Na compra de 4 pneus, ganhe montagem e alinhamento gratuitos!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Navegação por Categorias com Imagens Circulares -->
+        <section class="categories">
+            <h2>Compre por Categoria</h2>
+            <div class="category-list">
+                <div class="category-item">
+                    <img src="img/continental.jpg" alt="Pneus Continental" width="250" height="250" loading="lazy">
+                    <p>Continental</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/michelin.jpg" alt="Pneus Michelin" width="250" height="250" loading="lazy">
+                    <p>Michelin</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/pirelli.jpg" alt="Pneus Pirelli" width="250" height="250" loading="lazy">
+                    <p>Pirelli</p>
+                </div>
+                <div class="category-item">
+                    <img src="img/rodas.jpg" alt="Rodas BBS" width="250" height="250" loading="lazy">
+                    <p>Rodas BBS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Vitrine de Produtos -->
+        <section class="products">
+            <h2>Destaques da Semana</h2>
+            <div class="product-grid">
+                
+                <article class="product-card">
+                    <figure>
+                        <div class="img-container">
+                            <img src="img/pneu-continental.jpg" alt="Pneu Continental" width="400" height="300" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <h3>Pneu Continental Aro 14 PowerContact 2 175/70R14 84T</h3>
+                            <p class="price">R$ 424,90</p>
+                            <a href="produto.html"><button type="button">Comprar</button></a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+                        <div class="img-container">
+                            <img src="img/pneu-michelin.jpg" alt="Pneu Michelin" width="400" height="300" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <h3>Pneu Michelin Aro 17 Primacy 5 215/50R17 95W XL</h3>
+                            <p class="price">R$ 679,89</p>
+                            <a href="produto.html"><button type="button">Comprar</button></a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="product-card sold-out">
+                    <figure>
+                        <div class="img-container">
+                            <span class="badge">ESGOTADO</span>
+                            <img src="img/roda-bbs.jpg" alt="Roda BBS" width="400" height="300" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <h3>Jogo Roda BBS SP-24 aro 17 - Grafite Diamantada</h3>
+                            <p class="price">Indisponível</p>
+                            <button type="button" disabled>Avise-me</button>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+                        <div class="img-container">
+                            <img src="img/rodas-bbs-2.png" alt="Roda BBS 2" width="400" height="300" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <h3>4 RODAS KR M17 MODELO BBS RS / ARO 17X7 ET32</h3>
+                            <p class="price">R$ 3.797,10</p>
+                            <a href="carrinho.html"><button type="button">Comprar</button></a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+                        <div class="img-container">
+                            <img src="img/pneu-pirelli.jpg" alt="Pneu Pirelli" width="400" height="300" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <h3>Pneu Pirelli Aro 17 Scorpion Verde All Season 225/60R17</h3>
+                            <p class="price">R$ 1.069,90</p>
+                            <a href="carrinho.html"><button type="button">Comprar</button></a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+                <article class="product-card">
+                    <figure>
+                        <div class="img-container">
+                            <img src="img/pneu-pirelli3.jpg" alt="Pneu Pirelli 2" width="400" height="300" loading="lazy">
+                        </div>
+                        <figcaption>
+                            <h3>Pneu Pirelli Aro 16 Carrier 215/65R16C 109T 8 Lonas</h3>
+                            <p class="price">R$ 540,49</p>
+                            <a href="carrinho.html"><button type="button">Comprar</button></a>
+                        </figcaption>
+                    </figure>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <h3>Formas de pagamento</h3>
+            <div class="pagamento-linha">
+                <img src="img/cartoes2.png" alt="Visa, Mastercard, Boleto, Pix, etc">
+                <p>Parcele suas compras usando seu cartão de crédito e pague em até 10x sem juros</p>
+            </div>
+            <p class="direitos-autorais">
+                &copy; 2026 ImpérioDosPneus. CPX Distribuidora S/A. Avenida Brasil, 500 - Centro - CEP 17700-000 - Osvaldo Cruz/SP. CNPJ: 45.891.234/0001-89
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

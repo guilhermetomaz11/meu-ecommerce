@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Império dos Pneus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Império dos Pneus</h1>
+        </div>
+        <nav>
+            <ul>
+               <li><a href="index.html">Início</a></li>
+                <li><a href="produto.html">Pneus</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+            <a href="carrinho.html" class="cart">🛒 Carrinho (2)</a>
+        </nav>
+    </header>
+
+    <main class="page-container cart-layout">
+        <section class="cart-items">
+            <h2>Seu Carrinho de Compras</h2>
+            <table class="cart-table">
+                <caption>Produtos Selecionados no Pedido</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Produto</th>
+                        <th scope="col">Preço Unitário</th>
+                        <th scope="col">Quantidade</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="product-cell">
+                            <img src="img/pneu-continental.jpg" alt="Pneu Continental" class="cart-thumb">
+                            <div>
+                                <strong>Pneu Continental PowerContact 2</strong><br>
+                                <small>Aro 14 - 175/70R14</small>
+                            </div>
+                        </td>
+                        <td>R$ 424,90</td>
+                        <td><input type="number" min="1" value="2" class="qty-input"></td>
+                        <td>R$ 849,80</td>
+                        <td><button type="button" class="btn-remove">Remover</button></td>
+                    </tr>
+                    <tr>
+                        <td class="product-cell">
+                            <img src="img/pneu-michelin.jpg" alt="Pneu Michelin" class="cart-thumb">
+                            <div>
+                                <strong>Pneu Michelin Primacy 5</strong><br>
+                                <small>Aro 17 - 215/50R17</small>
+                            </div>
+                        </td>
+                        <td>R$ 679,89</td>
+                        <td><input type="number" min="1" value="1" class="qty-input"></td>
+                        <td>R$ 679,89</td>
+                        <td><button type="button" class="btn-remove">Remover</button></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5">🎉 Parabéns! Você atingiu o valor mínimo e ganhou <strong>Frete Grátis</strong>!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Card Lateral -->
+        <aside class="order-summary">
+            <h2>Resumo do Pedido</h2>
+            <div class="summary-line">
+                <span>Subtotal:</span>
+                <span>R$ 1.529,69</span>
+            </div>
+            <div class="summary-line">
+                <span>Frete:</span>
+                <span class="free-shipping">GRÁTIS</span>
+            </div>
+            
+            <div class="coupon-box">
+                <label for="coupon">Cupom de Desconto</label>
+                <div class="coupon-input-group">
+                    <input type="text" id="coupon" placeholder="CÓDIGO">
+                    <button type="button">Aplicar</button>
+                </div>
+            </div>
+
+            <div class="summary-line total-line">
+                <span>Total:</span>
+                <span>R$ 1.529,69</span>
+            </div>
+
+            <a href="cadastro.html" class="btn-checkout">Finalizar Compra →</a>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="footer-conteudo">
+            <h3>Formas de pagamento</h3>
+            <div class="pagamento-linha">
+                <img src="img/cartoes2.png" alt="Visa, Mastercard, Boleto, Pix, etc">
+                <p>Parcele suas compras usando seu cartão de crédito e pague em até 10x sem juros</p>
+            </div>
+            <p class="direitos-autorais">
+                &copy; 2026 ImpérioDosPneus. CPX Distribuidora S/A. Avenida Brasil, 500 - Centro - CEP 17700-000 - Osvaldo Cruz/SP. CNPJ: 45.891.234/0001-89
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
